@@ -7,7 +7,7 @@ const config = require('./config.json')
 
 //Glitch Hosting
 
-/*app.get("/", (request, response) => {
+app.get("/", (request, response) => {
     console.log(Date.now() + " Ping Received");
     response.sendStatus(200);
       });
@@ -15,7 +15,6 @@ const config = require('./config.json')
       setInterval(() => {
         http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
       }, 280000);
-*/
 
 client.on("ready", () => {
     console.log('Index Ready!');
