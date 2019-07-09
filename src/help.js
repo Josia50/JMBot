@@ -22,8 +22,6 @@ client.on("message", (message) => {
 
 })
 
-  
-
 client.on('ready', () => {
     console.log('Help Message enabled!')
 })
