@@ -15,7 +15,8 @@ client.on("message", (message) => {
         message.member.removeRole(role);
         message.channel.send(`${message.member} Mod Updates role has been removed!`)
     }
-    var spoiler = message.guild.roels.find("name", "spoilers");
+    var spoiler = message.guild.roles.find("name", "spoilers");
+
     if(message.content == config.prefix + "spoilers") {
         message.member.addRole(spoiler);
         message.channel.send(`${message.member} You can now see spoilers.`)
@@ -28,7 +29,7 @@ client.on("message", (message) => {
 })
 
 client.on('ready', () => {
-    console.log('Role enabled!')
+    console.log('Role Module enabled!')
 })
 
 client.login(run.token);
