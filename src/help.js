@@ -12,6 +12,8 @@ client.on("message", (message) => {
         hembed.setTitle("Help Command")
         .addField("+modrole", "Will add the Mod-Updates role to you!")
         .addField("+modrole remove", "Will remove the Mod-Updates role from you!")
+        .addField("+spoilers", "Will give you the Spoilers role.")
+        .addField("+no more spoilers", "Will remove the Spoilers role.")
     
 
         message.channel.send(hembed);

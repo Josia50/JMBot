@@ -9,7 +9,7 @@ client.on('ready', () => {
 })
 
 client.on("guildMemberAdd", (member) =>  {
-  member.guild.channels.find("id", config.channelwelcome).send(`${member.user}, Welcome to the IGauntlet server!`); 
+  member.guild.channels.find("id", config.channelwelcome).send(`${member.user}, Welcome to the JMTeam server!`); 
   console.log(`${member.user} Joined`);
 });
 
