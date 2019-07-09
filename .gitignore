@@ -46,11 +46,10 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-config.json
-config.js
 node_modules/
 .env
 shrinkwrap.yaml
 temp
 packagemusico.json
 .idea/
+run.json
