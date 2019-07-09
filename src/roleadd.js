@@ -6,6 +6,8 @@ const run = require("./run.json")
 
 client.on("message", (message) => {
     var role = message.guild.roles.find("name", "Mod Updates");
+    var spoiler = message.guild.roles.find("name", "spoilers");
+
     if(message.content == config.prefix + "modrole") {
         message.member.addRole(role);
         message.channel.send(`${message.member} Mod Updates role has been added!`)
@@ -15,14 +17,14 @@ client.on("message", (message) => {
         message.member.removeRole(role);
         message.channel.send(`${message.member} Mod Updates role has been removed!`)
     }
-    var spoiler = message.guild.roles.find("name", "spoilers");
+  
 
-    if(message.content == config.prefix + "spoilers") {
+    if(message.content == config.prefix + "spoiler") {
         message.member.addRole(spoiler);
         message.channel.send(`${message.member} You can now see spoilers.`)
     }
 
-    if(message.content == config.prefix + "no more spoilers"); {
+    if(message.content == config.prefix + "spoiler remove") {
         message.member.removeRole(spoiler);
         message.channel.send(`${message.member} You will no longer see spoilers.`)
     }
